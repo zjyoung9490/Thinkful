@@ -1,0 +1,17 @@
+1. What is the goal of EDA (exploratory data analysis)?
+
+The goal of EDA should be to get a feel for the data you are working with and get the data into a state where you can start building models from it. It should give you information on what kinds of data types you are working with, if there are missing or null values, and also whether there are outliers in the data. After the data has been cleaned you can begin to find relationships and trends in the data as well as some of the summary statistics for the different features. This should give you an idea for additional features that you'll want to incorporate in before you move on to the next stage of the project. 
+
+2. Suppose that you are given a dataset of customer product reviews for an e-commerce company. Each review is scored as a Likert-style survey item where 1 indicates a negative sentiment about the product and a 5 is positive. These reviews are collected on the company's website. 
+a. What problems do you expect to find in the raw data?
+
+I think the biggest problems you would face would be incorrect spellings and use of punctuations. This would make it hard to process the data and find the features you are interested in.
+
+b. If your task is to build features that give information about customer sentiments, how would you approach this task and what kind of methods would you apply to accomplish it? 
+
+I would try to find key words or phrases that you could associate to each product review. For example, the word "terrible" might come up frequently in the negative reviews. You could do a count of everytime the word "terrible" comes up in a review and then break it down by sentiment (1-5) to see which one it is most highly associated with. You could also try to find the most occurring word for each sentiment.
+
+c. Try to identify some potentially useful features that you might derive from the raw data. How would you derive them and how would you assess the usefulness of those features?
+
+Some potentially useful features you could derive would be common occurrences of specific words and also the total number of words in a review. For example, it could be that highly negative reviews are short and too the point. More positive reviews might have a longer explanation of why the product is good and what the customer likes and doesn't like about it. Another possible useful feature may be the presence of exclamation points. Reviews at the extremes would likely have more exclamation points than reviews in the middle ground.  
+
